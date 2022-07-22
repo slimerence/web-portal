@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="ph-container">
     <div id="particles-js"></div>
     <div class="page-content">敬请期待</div>
   </div>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-container {
+.ph-container {
   margin: 0;
   padding: 0;
   display: flex;
@@ -41,6 +41,10 @@ export default {
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #particles-js {

@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <PlaceHolder />
+     <transition name="fade-transform" mode="out-in">
+      <keep-alive>
+        <router-view>
+          <!-- 这里是会被缓存的视图组件，比如 首页！ -->
+        </router-view>
+      </keep-alive>
+    </transition>
   </div>
 </template>
 
 <script>
-import PlaceHolder from './components/PlaceHolder.vue'
 
 export default {
   name: 'App',
   components: {
-    PlaceHolder
+    
   }
 }
 </script>
